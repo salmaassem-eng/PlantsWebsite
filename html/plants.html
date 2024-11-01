@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping.">
+    <meta name="author" content="LUCKY SHRUB Garden">
+        <!-- css file -->
+        <link rel="stylesheet" href="../css/plants.css">
+    <title>Plants </title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <nav >
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <h1>
+        " OUR PLANTS "
+    </h1>
+
+    <div class="dropdown">
+        <button class="dropdown-button">Filter By Price</button>
+        <div class="dropdown-content">
+            <a href="#" id="option1" value="60" onclick="filterList(60)">Greater than 60</a>
+            <a href="#" id="option2" value="50" onclick="filterList(50)">between 30 and 60</a>
+            <a href="#" id="option3" value="30" onclick="filterList(30)">Lower than 30</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Sort By Price</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="sortList('asc')">Ascending</a>
+            <a href="#" onclick="sortList('desc')">Descending</a>
+        </div>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search by plant name" onkeyup="searchList()">
+    <main>
+        <section id="articles">
+            <article>
+                <img src="../images/plant1.jpg" style="width: 80%; height: 70%;"class="fade-in-image">
+                <!-- <p> 60$</p> -->
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Monstera </span> which price is<span class="price"> 60 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="../images/plant2.webp" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Monstera </span> which price is <span class="price"> 45 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="../images/plant13.webp" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Anthurium </span>which price is <span class="price">30 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="../images/plant4.avif" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 4 </span>which price is <span class="price">35 </span>$
+                    </p>
+                </details>
+                <button  class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://media.istockphoto.com/id/1372896722/photo/potted-banana-plant-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=ypi6_4naoAQuOgbH6TSU6jJ-uPSvKR1igsXRNlBoJNQ=" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 5</span> which price is <span class="price">80 </span>$
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/1022922/pexels-photo-1022922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 6</span> which price is<span class="price">20 </span> $
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/1022921/pexels-photo-1022921.jpeg?auto=compress&cs=tinysrgb&w=600" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Aloe Vera</span> which price is <span class="price">26 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/122334/pexels-photo-122334.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Mandria</span> which price is <span class="price">40 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/105028/pexels-photo-105028.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 9</span> which price is <span class="price">15 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://static.pexels.com/photos/6447/yellow-spring-flower-closeup-6447-large.jpg" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 10</span> which price is <span class="price">20 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/375376/pexels-photo-375376.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 11</span> which price is <span class="price">60 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/89386/pexels-photo-89386.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 12</span> which price is <span class="price">32 </span>$
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+            <article>
+                <img src="https://media.istockphoto.com/id/1380361370/photo/decorative-banana-plant-in-concrete-vase-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=NvFJK2DS_81y9_zniJVgcE2O9_6VAdJ0S28vYGaQegs=" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 13</span> which price is <span class="price">24 </span>$
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+            
+            <article>
+                <img src="../images/plant14.webp" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 14</span> which price is <span class="price">15 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="../images/plant17.avif" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 15</span> which price is<span class="price"> 50 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/113535/pexels-photo-113535.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 16</span> which price is <span class="price">45 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="http://static1.everypixel.com/ep-pixabay/0757/8212/9633/40261/7578212963340261782-sunflowers.jpg" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">Sunflower</span> which price is <span class="price">30 </span>$
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/298189/pexels-photo-298189.jpeg?w=1200&h=627&auto=compress&cs=tinysrgb" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 18</span> which price is<span class="price">60 </span>  $
+                    </p>
+                </details>
+                <button class="book"> Book </button>
+            </article>
+            <article>
+                <img src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/52D487CAED.jpg" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 19</span> which price is <span class="price">90 </span>$
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+            <article>
+                <img src="../images/plant19.webp" style="width: 80%; height: 70%;"class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 20</span> which price is <span class="price">19 </span>$
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+            <article>
+                <img src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/OHPESFN9MC.jpg" style="width: 80%; height: 70%;" class="fade-in-image">
+                <details>
+                    <summary >Know more information</summary>
+                    <p>This is <span class="plant">plant 21</span> which price is <span class="price">10 </span> $
+                    </p>
+                </details>
+                <button class="book" > Book </button>
+            </article>
+        </section>
+        <a href="#" class="up"><i class="fas fa-chevron-up"></i>^</a>
+    </main>
+
+    <footer>
+        <div>
+                <p style="font-size: 25px;">Thank you for your visit !</p>
+
+        </div>
+    </footer>
+    
+    <script src="../java/js.js"></script>
+</body>
+</html>
